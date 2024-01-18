@@ -71,36 +71,6 @@ class SessionSchedule
 
 	def array_times 
 		@@array_time.each_with_index { |x, i| puts " #{i + 1}. #{x}"}
+		
 	end
-
-
 end 
-
-# ses = SessionSchedule.new
-# puts "Выберите время сианса "
-# puts ses.sessions_times
-# ses.sessions_times.each_with_index { |x, i| puts " #{i + 1}. #{x}"}
-# num = STDIN.gets.chomp.to_i
-# session_time = ses.sessions_times[(num) - 1]
-# until (1..(ses.sessions_times.size)).include? num 
-# 	puts "Не правильный ввод\n" +
-# 	"Выберите правельное время сианса"
-# 	num = STDIN.gets.chomp.to_i
-# end
-
-# puts num 
-
-
-
-# puts "Сегодня #{ses.today}"
-# puts "Выберите дату посещения"
-# puts ses.show_dates
-# num = 1
-# puts "as #{(1..(ses.sessions_times.size)).include? num}"
-# # p ses.visit_date(num)
-
-# num = STDIN.gets.chomp.to_i
-# until (1..4).include? num 
-# 	p "Не правильный ввод"
-# 	num = STDIN.gets.chomp.to_i
-# end
